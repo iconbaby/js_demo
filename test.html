@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="test.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="test.css" />
     <meta charset="UTF-8">
     <title>Title</title>
+    <!-- <script src="test.js"></script> -->
 </head>
-<body>
 
+<body>
+    
+    <h1>What to buy</h1>
+    <p title="pp">dont forget to buy this staff</p>
+    <ul id="purchases">
+        <li class="item">A tin of bean</li>
+        <li class="item">milk</li>
+        <li class="item">cheese</li>
+    </ul>
+    <script>
+            var pps = document.getElementsByTagName("p");
+            pps[0].setAttribute("title","ddddd")
+            alert(pps[0].getAttribute("title"));
+        // var tags = document.getElementsByTagName("li");
+        // for(var i  = 0;i<tags.length;i++){
+        //     alert(typeof tags[i])
+        // }
+
+    // alert(document.getElementsByTagName("li").length)
+
+    </script>
 </body>
+
 </html>
