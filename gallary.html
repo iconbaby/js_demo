@@ -4,26 +4,29 @@
 <head>
   <title>gallary image</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="layout.css" ,media="screen">
+
 </head>
 
 <body>
   <h1>Snapshots</h1>
   <ul>
     <li>
-      <a href="images/car.jpg" title="a policy car">Car</a>
+      <a href="images/car.jpg" title="a policy car" onclick="showPic(this);return false;">Car</a>
     </li>
     <li>
-      <a href="images/ghost.jpg" title="a ghost">ghost</a>
+      <a href="images/ghost.jpg" title="a ghost" onclick="showPic(this);return false;">ghost</a>
     </li>
     <li>
-      <a href="images/girl.jpg" title="a beautiful girl">girl</a>
+      <a href="images/girl.jpg" title="a beautiful girl" onclick="showPic(this);return false;">girl</a>
     </li>
     <li>
-      <a href="images/mount.jpg" title="a mount">mount</a>
+      <a href="images/mount.jpg" title="a mount" onclick="showPic(this);return false;">mount</a>
     </li>
   </ul>
   <img id="placeHolder" src="images/init.jpg" alt="my image gallery" />
-  <script type="text/javascript" src ="scripts/showPic.js"></script>
+  <p id="description">Choose an image.</p>
+  <script type="text/javascript" src="scripts/showPic.js"></script>
 </body>
 
 </html>
