@@ -32,5 +32,12 @@
 // var current_day = new Date();
 // var day = current_day.getDay
 // alert(current_day)
-alert( typeof document.getElementById("purchases"))
-alert(document.getElementsByTagName("*").length)
+// alert( typeof document.getElementById("purchases"))
+// alert(document.getElementsByTagName("*").length)
+window.onload = function () {
+  var para = this.document.createElement("p");
+  var testdiv = document.getElementById("testdiv");
+  testdiv.appendChild(para);
+  var text = document.createTextNode("hello world");
+  para.appendChild(text);
+}
